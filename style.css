@@ -74,19 +74,41 @@ main{width: 100%;padding-top: 40px;}
     /* MAIN > INDEX*/
 main .bloco{width: 100%;display: flex;padding:0 70px 0 30px;}
 main .bloco .fotos{width: 30%;
-    
+    justify-self: center;
+    align-self: center;
 
 }
 main .bloco .fotos img{width: 100%;
 }
-main .bloco .fotos img:hover{transform:scale(3);
+main .bloco .fotos img:hover{transform:scale(2.5);
+    margin-top:-30%;
     margin-left: -110%;
 }
 main .texto{width: 70%;
+    padding-right: 50px;
+    padding-left: 30px;
     
 }
+main .texto h2{text-align: center;font-size: 2rem;}
+main .texto p{text-align: justify;text-indent: 30px;font-size: 1.5rem;font-weight:normal;}
     /* FIM MAIN > INDEX*/
 
 
 
 /* ------- FIM MAIN -----------*/
+/* ------- FOOTER (padrao todos) --------*/
+footer{background-color: rgb(1 33 105);
+height: 10em;
+margin-top: 3em;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;}
+footer h2{color:white;
+font-weight: bold;
+font-size: 1.8rem;}
+footer h3{font-size:1.4rem;
+color: white;}
+footer h3 a{display: inline-block;
+color:green}
+/**/
