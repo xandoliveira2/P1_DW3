@@ -83,7 +83,7 @@ margin-bottom: 20px;
 font-size: 2rem;}
 main .bloco .fotos img{width: 100%;
 }
-main .bloco .fotos img:hover{transform:scale(2.5);
+main .bloco .fotos .apenas img:hover{transform:scale(2.5);
     margin-top:-30%;
     margin-left: -110%;
 }
