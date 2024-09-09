@@ -95,7 +95,14 @@ main .texto{width: 70%;
 main .texto h2{text-align: center;font-size: 2rem;}
 main .texto p{text-align: justify;text-indent: 30px;font-size: 1.5rem;font-weight:normal;}
     /* FIM MAIN > INDEX*/
-
+    /* MAIN > PRATOS*/
+main .bloco .subbloco .texto{margin:0;padding:0;text-align: justify;}
+    .subbloco{width: 50%;
+    display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;}
+    /* FIM MAIN > PRATOS*/
 
 
 /* ------- FIM MAIN -----------*/
