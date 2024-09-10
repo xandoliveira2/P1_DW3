@@ -72,7 +72,8 @@ nav ul li:hover{
 /* -------- MAIN ----------*/
 main{width: 100%;padding-top: 40px;text-align: center;}
     /* MAIN > INDEX*/
-main .bloco{width: 100%;display: flex;padding:0 70px 0 30px;}
+main .bloco{width: 100%;display: flex;padding:0 70px 0 30px;
+justify-content: center;}
 main .bloco .fotos{width: 30%;
     justify-self: center;
     align-self: center;
