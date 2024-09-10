@@ -12,90 +12,135 @@ body {
     overflow-x: hidden;
 
 }
+
 /* ----------------- HEADER -> PADRÂO EM TODOS --------------------*/
 
-header{background-color: rgb(200 16 46);
-display: flex;
-justify-content: space-around;
-align-items: center;
-height: 15em;}
+header {
+    background-color: rgb(200 16 46);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 15em;
+}
 
 header h1 {
     text-transform: uppercase;
     font-size: 3em;
-    color:white;
+    color: white;
     font-weight: bold;
 }
 
 header img {
     width: 18em;
-    border:2px solid black
+    border: 2px solid black
 }
 
 /* ------- FIM HEADER ---------*/
 /* ------- NAV (padrão em todos)---------*/
-nav{
-height: 5em;
-width: 100%;
-background-color: rgb(1 33 105);}
-nav ul{display: flex;
-width: 100%;
-height: 100%;
-justify-content: space-evenly;
-
+nav {
+    height: 5em;
+    width: 100%;
+    background-color: rgb(1 33 105);
 }
-nav ul li{color:white;font-weight: 600;
-font-size: 2em;
 
-width: calc((100vw/7)-10vw);
-height: 100%;
-display: flex;
-align-items: center;
-justify-content: center;
-list-style: none;
-text-align:center;
-
-transition:0.4s ease-in-out;
+nav ul {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: space-evenly;
 
 }
 
+nav ul li {
+    color: white;
+    font-weight: 600;
+    font-size: 2em;
 
-nav ul a{display: block;width: 100%;}
-nav ul li:hover{
+    width: calc((100vw/7)-10vw);
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    text-align: center;
+
+    transition: 0.4s ease-in-out;
+
+}
+
+
+nav ul a {
+    display: block;
+    width: 100%;
+}
+
+nav ul li:hover {
     transform: scale(1.3);
-    transition:0.8s ease-in-out;
+    transition: 0.8s ease-in-out;
     background-color: white;
     color: rgb(1 33 105);
 }
+
 /* ------- FIM NAV ---------*/
 
 /* -------- MAIN ----------*/
-main{width: 100%;padding-top: 40px;text-align: center;}
-    /* MAIN > INDEX*/
-main .bloco{width: 100%;display: flex;padding:0 50px 0 50px;
-justify-content: center;}
-main .bloco .fotos{width: 30%;
+main {
+    width: 100%;
+    padding-top: 40px;
+    text-align: center;
+}
+
+/* MAIN > INDEX*/
+main .bloco {
+    width: 100%;
+    display: flex;
+    padding: 0 50px 0 50px;
+    justify-content: center;
+}
+
+main .bloco .fotos {
+    width: 30%;
     justify-self: center;
     align-self: center;
 
 }
-main h1{margin-top: 20px;
-margin-bottom: 20px;
-font-size: 2rem;}
-main .bloco .fotos img{width: 100%;
+
+main h1 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 2rem;
 }
-main .bloco .fotos .apenas img:hover{transform:scale(2.5);
-    margin-top:-30%;
+
+main .bloco .fotos img {
+    width: 100%;
+}
+
+main .bloco .fotos .apenas img:hover {
+    transform: scale(2.5);
+    margin-top: -30%;
     margin-left: -110%;
 }
-main .texto{width: 70%;
+
+main .texto {
+    width: 70%;
     padding-right: 50px;
     padding-left: 30px;
-    
+
 }
-main .texto h2{text-align: center;font-size: 2rem;}
-main .texto p{text-align: justify;text-indent: 30px;font-size: 1.5rem;font-weight:normal;}
-    /* FIM MAIN > INDEX*/
+
+main .texto h2 {
+    text-align: center;
+    font-size: 2rem;
+}
+
+main .texto p {
+    text-align: justify;
+    text-indent: 30px;
+    font-size: 1.5rem;
+    font-weight: normal;
+}
+
+/* FIM MAIN > INDEX*/
 
 
 
@@ -103,56 +148,289 @@ main .texto p{text-align: justify;text-indent: 30px;font-size: 1.5rem;font-weigh
 
 
 
-    /* MAIN > PRATOS*/
-main .bloco .subbloco .texto {width: 100%;margin:0;padding:20 50px 0 0;text-align: justify;text-indent: 0;}
-main .bloco .subbloco{align-items: center;}
-main .bloco .subbloco .fotos{width: 80%;}
-    .subbloco{width: 50%;
-        margin:50px 0;
+/* MAIN > PRATOS*/
+main .bloco .subbloco .texto {
+    width: 100%;
+    margin: 0;
+    padding: 20 50px 0 0;
+    text-align: justify;
+    text-indent: 0;
+}
+
+main .bloco .subbloco {
+    align-items: center;
+}
+
+main .bloco .subbloco .fotos {
+    width: 80%;
+}
+
+.subbloco {
+    width: 50%;
+    margin: 50px 0;
     display: flex;
-flex-direction: column;
-align-items: center;
-justify-content: center;
-text-align: center;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
-    /* FIM MAIN > PRATOS*/
+
+/* FIM MAIN > PRATOS*/
 
 
 
 
 
 
-    /* MAIN > ESTATISTICA_GERAL*/
-.estatistica{width: 100vw;
-height: fit-content;
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
+/* MAIN > ESTATISTICA_GERAL*/
+.estatistica {
+    width: 100vw;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
-.estatistica .grid{display: grid;
-grid-template-columns: 1fr;
-grid-template-rows: repeat(12, 1fr);
-width: 80%;
-height: fit-content;}
 
-    /* FIM MAIN > ESTATISTICA GERAL*/
+.estatistica .grid {
+    display: grid;
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+
+    grid-template-columns: 1fr;
+    grid-template-rows: 12, 1fr;
+    width: 80%;
+    height: fit-content;
+    grid-template-areas:
+
+        'extensao extensao'
+        'capital capital'
+        'populacao populacao'
+        'densidade densidade'
+        'idh idh'
+        'idioma idioma'
+        'governo governo'
+        'monarca monarca'
+        'saida saida'
+        'moeda moeda'
+        'fuso fuso'
+        'telefone telefone'
+    ;
+}
+
+.extensao {
+    grid-area: extensao;
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+    border-bottom: 2px solid black;
+    padding: 5px;
+    font-size: 2rem;
+    border-top: 2px solid black;
+}
+
+.capital {
+    grid-area: capital;
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+    border-bottom: 2px solid black;
+    padding: 5px;
+    font-size: 2rem;
+}
+
+.populacao {
+    grid-area: populacao;
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+    border-bottom: 2px solid black;
+    padding: 5px;
+    font-size: 2rem;
+}
+
+.densidade {
+    grid-area: densidade;
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+    border-bottom: 2px solid black;
+    padding: 5px;
+    font-size: 2rem;
+}
+
+.idh {
+    grid-area: idh;
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+    border-bottom: 2px solid black;
+    padding: 5px;
+    font-size: 2rem;
+}
+
+.idioma {
+    grid-area: idioma;
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+    border-bottom: 2px solid black;
+    padding: 5px;
+    font-size: 2rem;
+}
+
+.governo {
+    grid-area: governo;
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+    border-bottom: 2px solid black;
+    padding: 5px;
+    font-size: 2rem;
+}
+
+.monarca {
+    grid-area: monarca;
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+    border-bottom: 2px solid black;
+    padding: 5px;
+    font-size: 2rem;
+}
+
+.saida {
+    grid-area: saida;
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+    border-bottom: 2px solid black;
+    padding: 5px;
+    font-size: 2rem;
+}
+
+.moeda {
+    grid-area: moeda;
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+    border-bottom: 2px solid black;
+    padding: 5px;
+    font-size: 2rem;
+}
+
+.fuso {
+    grid-area: fuso;
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+    border-bottom: 2px solid black;
+    padding: 5px;
+    font-size: 2rem;
+}
+
+.telefone {
+    grid-area: telefone;
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+    border-bottom: 2px solid black;
+    padding: 5px;
+    font-size: 2rem;
+}
+
+.telefone:hover,
+.capital:hover,
+.densidade:hover,
+.moeda:hover,
+.extensao:hover,
+.governo:hover,
+.monarca:hover,
+.idh:hover,
+.idioma:hover,
+.saida:hover,
+.fuso:hover,
+.populacao:hover {
+    background-color: #DDD;
+}
+
+/* FIM MAIN > ESTATISTICA GERAL*/
 
 
 /* ------- FIM MAIN -----------*/
 /* ------- FOOTER (padrao todos) --------*/
-footer{background-color: rgb(1 33 105);
-height: 10em;
-margin-top: 3em;
-display: flex;
-justify-content: center;
-align-items: center;
-flex-direction: column;}
-footer h2{color:white;
-font-weight: bold;
-font-size: 1.8rem;}
-footer h3{font-size:1.4rem;
-color: white;}
-footer h3 a{display: inline-block;
-color:green}
+footer {
+    background-color: rgb(1 33 105);
+    height: 10em;
+    margin-top: 3em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+footer h2 {
+    color: white;
+    font-weight: bold;
+    font-size: 1.8rem;
+}
+
+footer h3 {
+    font-size: 1.4rem;
+    color: white;
+}
+
+footer h3 a {
+    display: inline-block;
+    color: green
+}
+
 /**/
