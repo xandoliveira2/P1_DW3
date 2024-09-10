@@ -96,6 +96,13 @@ main .texto{width: 70%;
 main .texto h2{text-align: center;font-size: 2rem;}
 main .texto p{text-align: justify;text-indent: 30px;font-size: 1.5rem;font-weight:normal;}
     /* FIM MAIN > INDEX*/
+
+
+
+
+
+
+
     /* MAIN > PRATOS*/
 main .bloco .subbloco .texto {width: 100%;margin:0;padding:20 50px 0 0;text-align: justify;text-indent: 0;}
 main .bloco .subbloco{align-items: center;}
@@ -109,6 +116,27 @@ justify-content: center;
 text-align: center;
 }
     /* FIM MAIN > PRATOS*/
+
+
+
+
+
+
+    /* MAIN > ESTATISTICA_GERAL*/
+.estatistica{width: 100vw;
+height: fit-content;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+.estatistica .grid{display: grid;
+grid-template-columns: 1fr;
+grid-template-rows: repeat(12, 1fr);
+width: 80%;
+height: fit-content;}
+
+    /* FIM MAIN > ESTATISTICA GERAL*/
 
 
 /* ------- FIM MAIN -----------*/
