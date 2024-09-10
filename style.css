@@ -404,8 +404,28 @@ main .bloco .subbloco .fotos {
 
 /* FIM MAIN > ESTATISTICA GERAL*/
 
+/* MAIN > PONTOS_TURISTICOS*/
+.pontos{display: flex;
+width: 100%;}
+/* FIM MAIN > PONTOS_TURISTICOS */
+
 
 /* ------- FIM MAIN -----------*/
+
+
+
+
+
+
+/* ------- ASIDE ----------*/
+aside{width: 30%;
+background-color: linear;}
+/* ------- FIM ASIDE --------*/
+
+
+
+
+
 /* ------- FOOTER (padrao todos) --------*/
 footer {
     background-color: rgb(1 33 105);

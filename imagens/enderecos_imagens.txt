@@ -6,6 +6,6 @@ http://www.yazigi.com.br/galeria/repositorio/cornish-pasty.jpg -> cornish pasty(
 http://www.yazigi.com.br/galeria/repositorio/beef-wellington.jpg -> beef wellington(pratos)
 http://www.yazigi.com.br/galeria/repositorio/scones.jpg -> scones(pratos)
 http://www.yazigi.com.br/galeria/repositorio/yorkshire-pudding.jpg -> yorkshire pudding(pratos)
-
+http://www.yazigi.com.br/galeria/repositorio/images/noticias/pontos-turisticos-inglaterra/hyde-park.jpg -> hyde park(pontos_turisticos)
 
 
