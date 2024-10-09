@@ -1,102 +1,72 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+  <head>
+    <!-- Meta tags Obrigatórias -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="estilo.css">
+    <title>PinguimFlix</title>
+  </head>
+  <body class="bg-dark">
+    <div class="container">
+      <h1>PinguimFlix</h1>
 
-<head>
-    <link rel="stylesheet" href="style.css">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="imagens/favicon.ico" rel="shortcut icon" type="image/x-icon">
-    <title>Home - Inglaterra</title>
-</head>
-
-<body>
-    <header>
-        <h1>Inglaterra</h1>
-        <img src="imagens/inglaterra_bandeira.jpg" alt="Bandeira da Inglaterra">
-    </header>
-
-    <nav>
-        <ul>
-            <a href="index.html">
-                <li>Home</li>
-            </a>
-            <a href="acontecimentos.html">
-                <li>Acontecimentos históricos</li>
-            </a>
-            <a href="cultura.html">
-                <li>Cultura</li>
-            </a>
-            <a href="pratos.html">
-                <li>Pratos Típicos</li>
-            </a>
-            <a href="vegetacao.html">
-                <li>Vegetação</li>
-            </a>
-            <a href="pontos_turisticos.html">
-                <li>Pontos turisticos</li>
-            </a>
-            <a href="estatistica_geral.html">
-                <li>Estatísticas Gerais</li>
-            </a>
-        </ul>
-    </nav>
-
-    <main>
-
-        <div class="bloco">
-            <div class="texto">
-                <h2>Resumo</h2>
-                
-                <p>Inglaterra é uma das nações constituintes do Reino Unido. O país faz
-                    fronteira com a Escócia ao norte e com o País de Gales a oeste; o Mar da Irlanda está a noroeste, o
-                    Mar Celta está a sudoeste, enquanto o Mar do Norte está a leste e o Canal da Mancha, ao sul, a
-                    separa da Europa continental. A maior parte da Inglaterra compreende a parte central e sul da ilha
-                    da Grã-Bretanha, no Atlântico Norte. O país também inclui mais de 100 ilhas menores, como as Ilhas
-                    Scilly e a Ilha de Wight.</p>
-                <p>Representa o centro econômico e financeiro do Reino Unido, com ampla participação do setor terciário
-                    na composição do PIB.</p>
-            </div>
-            <div class="fotos">
-                <img src="imagens/europa_inglaterra_map.jpg" alt="foto vintage da europa" style="height:20rem ;">
-            </div>
+      <!-- MENU PRINCIPAL PARA NAVEGAÇÃO -->
+      <nav class="navbar navbar-expand-lg navbar-dark ">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse " id="navbarTogglerDemo02">
+          <ul class="navbar-nav mx-auto mt-5 mb-2">
+              <li class="nav-item active">
+                <a class="nav-link mx-5 font-menu" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link mx-5 font-menu" href="#">Sobre</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link mx-5 font-menu" href="catalogo.html">Catálogo</a>
+              </li>
+              <li class="nav-item mx-5 dropdown">
+                <a class="nav-link dropdown-toggle font-menu" href="" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Cadastros
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="form-clientes.html">Clientes</a>
+                  <a class="dropdown-item" href="form-filmes.html">Filmes</a>
+                </div>
+              </li> 
+              <li class="nav-item">
+                <a class="nav-link mx-5 font-menu" href="#">Logout</a>
+              </li>
+          </ul>
         </div>
+      </nav>
+      <!-- FIM MENU -->
 
-
-
-
-
-
-
-
-        <div class="bloco">
-            <div class="texto">
-
-                <h2>Identificando Inglaterra<h2>
-                        <p>O caso do Reino Unido, da Grã-Bretanha e Inglaterra é um dos que causam confusão. Mas,
-                            afinal, é tudo a mesma coisa? A Inglaterra é um país que tem como capital a cidade de
-                            Londres onde se localiza o Palácio de Buckingham, residência oficial da Rainha Elizabeth II.
-                            A Grã-Bretanha por sua vez não é um país. É uma ilha, a maior ilha britânica que abriga a
-                            Inglaterra, o País de Gales e a Escócia.</p>
-
-                        <p>Já o Reino Unido é um estado soberano que compreende os países da Grã-Bretanha, no caso a
-                            Inglaterra, País de Gales a Escócia, mais a Irlanda do Norte e algumas pequenas ilhas.
-                            Embora cada uma dessas nações seja independente, a capital do Reino Unido também é Londres e
-                            seu chefe de Estado é a Rainha Elizabeth II.</p>
-
-                        <p>Ou seja: Inglaterra + País de Gales + Escócia = Grã-Bretanha</p>
-                        <p>Grã-Bretanha + Irlanda do Norte = Reino Unido</p>
-            </div>
-            <div class="fotos">
-                <div class="apenas">
-                <img src="imagens/british_uk_england.jpg" alt=""></div>
-
-            </div>
+      <main class="bg-light">
+        <div id="logo">
+          <img class="img-fluid p-5" src="imagens/logo-pinguimflix.png">
         </div>
-    </main>
-    <footer>
-        <h2>Desenvolvido por: Alexandre</h2>
-        <h3>Github: <a href="https://github.com/xandoliveira2" target="_blank">xandoliveira2</a></h3>
-    </footer>
-</body>
+        <div id="banner">
+          <img class="img-fluid" src="imagens/banner.png">
+        </div>
+      </main>
 
+      <footer class="pt-4 pb-5 bg-dark">
+        <h6 class="lead">Desenvolvido por Júnior Gonçalves</h6>
+      </footer>
+
+    </div>
+
+    <!-- JavaScript (Opcional) -->
+    <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
+  
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script> 
+   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script> 
+   
+  </body>
 </html>
