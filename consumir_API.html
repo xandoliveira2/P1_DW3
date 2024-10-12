@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>making from zero</title>
+</head>
+<body>
+    <script>
+        function mcallback(json){
+ 
+            document.getElementById('rua').value=json.uf;
+       
+        }
+
+        function pegarcep(cep){
+            if (cep==''){
+                document.getElementById('rua').value=''
+            }
+            var pegar_conteudo = document.createElement('script') ;
+            // pegar_conteudo.innerText=cep
+            pegar_conteudo.src = 'https://viacep.com.br/ws/'+ cep + '/json/?callback=mcallback';
+           
+
+            document.body.appendChild(pegar_conteudo)
+        }
+    </script>
+    <form action="">
+        <label for="cep">cep</label>
+        <input type="text" name="cep" id="cep" onblur="pegarcep(this.value)">
+        <label for="rua">rua</label>
+        <input type="text" name="rua" id="rua">
+        <input type="submit" value="anyvalue">
+    </form>
+    
+</body>
+</html>
