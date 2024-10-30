@@ -1,0 +1,20 @@
+html{font-size:20px;background-color: white;}
+#menu{
+    background-color: lightgreen;
+    height: 120px;
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+}
+#menu .texto{display: flex;flex-direction: column;}
+#menu .texto p{font-size: 1rem;margin:0;}
+
+#menu .foto{}
+.seta-baixo {
+    display: inline;
+    width: 0;
+    height: 0;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-top: 20px solid #007bff; /* Cor da seta */
+}
