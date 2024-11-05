@@ -9,7 +9,15 @@ html{font-size:20px;background-color: white;}
 #menu .texto{display: flex;flex-direction: column;}
 #menu .texto p{font-size: 1rem;margin:0;}
 
-#menu .foto{}
+.background-imagem{
+    background-image: url('imagens/obmepopacity.png');  
+    background-repeat: no-repeat;  
+    background-size: contain;
+    background-position: center;
+    
+   
+}
+
 .seta-baixo {
     display: inline;
     width: 0;
