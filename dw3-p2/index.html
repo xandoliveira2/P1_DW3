@@ -40,12 +40,13 @@
         <div class="column is-four-fifths" style="padding-left: 40px;">
             <p>Olá, meu nome é Alexandre Alcindo!</p>
             <h6>um pouco sobre mim</h6>
-            
-            <p style="margin-top: 15px;">Sou estudante em tecnólogo de desenvolvimento de software multiplataforma, estou em constante desenvolvimento pessoal
-            e acadêmico, sempre disposto a aprender e conhecer novas pessoas e tecnologias.
+
+            <p style="margin-top: 15px;">Sou estudante em tecnólogo de desenvolvimento de software multiplataforma,
+                estou em constante desenvolvimento pessoal
+                e acadêmico, sempre disposto a aprender e conhecer novas pessoas e tecnologias.
             </p>
             <p>Atualmente estou no 3° semestre do meu tecnólogo, com previsão de término em junho de 2026</p>
-            
+
         </div>
 
     </div>
@@ -53,80 +54,149 @@
     <div class="columns is-full" style="padding:0 20px 0 40px ;">
         <div class="column is-three-fifths">
             <h3 style="text-align: center;color: rgb(178,0,0);">Interfatecs 2024</h3>
-            <p>A maratona de programação interfatecs é um evento anual que acontece entre todas as FATECS de São Paulo, uma maratona quer
+            <p>A maratona de programação interfatecs é um evento anual que acontece entre todas as FATECS de São Paulo,
+                uma maratona quer
                 abrange diversos algoritmos como grafos, lógica, cálculos, etc. </p>
-            <p>Tive o prazer de participar dessa maratona junto com meus colegas <a class="link-offset-2 link-underline link-underline-opacity-25" href="https://www.linkedin.com/in/rodrigo-polastro/">Rodrigo Polastro</a>
-            e <a class="link-offset-2 link-underline link-underline-opacity-25" href="https://www.linkedin.com/in/gustavo-fonseca-santos/">Gustavo Fonseca</a> junto com a orientação do meu professor 
-        <a class="link-offset-2 link-underline link-underline-opacity-25" href="https://www.linkedin.com/in/jrgoncalves85/">Júnior Gonçalves</a> 
-    e nossa coordenadora <a href="https://www.linkedin.com/in/marcia-regina-reggiolli-6067931b5/">Marcia Regina</a>, o qual tivemos
-    nossos esforços recompensados e terminando essa maratona em 2° lugar, competindo contra outras 425 equipes dentre a classificatória e a final,  um prazer e uma experiência inexplicável</p>
+            <p>Tive o prazer de participar dessa maratona junto com meus colegas <a
+                    class="link-offset-2 link-underline link-underline-opacity-25"
+                    href="https://www.linkedin.com/in/rodrigo-polastro/">Rodrigo Polastro</a>
+                e <a class="link-offset-2 link-underline link-underline-opacity-25"
+                    href="https://www.linkedin.com/in/gustavo-fonseca-santos/">Gustavo Fonseca</a> junto com a
+                orientação do meu professor
+                <a class="link-offset-2 link-underline link-underline-opacity-25"
+                    href="https://www.linkedin.com/in/jrgoncalves85/">Júnior Gonçalves</a>
+                e nossa coordenadora <a href="https://www.linkedin.com/in/marcia-regina-reggiolli-6067931b5/">Marcia
+                    Regina</a>, o qual tivemos
+                nossos esforços recompensados e terminando essa maratona em 2° lugar, competindo contra outras 425
+                equipes dentre a classificatória e a final, um prazer e uma experiência inexplicável
+            </p>
         </div>
-        
+
         <div class="column is-two-fifths"><img src="imagens/interfatecs.jpg" alt="interfatecs 2024"></div>
     </div>
     <div class="columns is-full" style="padding:0 20px 0 40px ;">
         <div class="column is-half">
             <h3 style="color:rgb(23, 146, 191);text-align: center;">OBA Prata 2015</h3>
-            <p>Conquista da medalha de PRATA nas olimpiadas brasileira de astronomia em 2015, uma prova realizada durante um período de aula 
-                com participação de todos os alunos do ensino fundamental do Brasil, participei desta olimpiada representando a escola
-                 municipal Engenheiro Jorge Oliva em Itaú - Minas gerais
+            <p>Conquista da medalha de PRATA nas olimpiadas brasileira de astronomia em 2015, uma prova realizada
+                durante um período de aula
+                com participação de todos os alunos do ensino fundamental do Brasil, participei desta olimpiada
+                representando a escola
+                municipal Engenheiro Jorge Oliva em Itaú - Minas gerais
             </p>
         </div>
         <div class="column is-half background-imagem">
-           <h3 style="text-align:center;">OBMEP Bronze 2015</h3>
+            <h3 style="text-align:center;">OBMEP Bronze 2015</h3>
+            <p>Mais uma vez representando a escola municipal Engenheiro Jorge Oliva em 2015, conquistei a medalha de
+                bronze na OBMEP do 7° ano do fundamental, mais uma vez realizando essa olimpiada em todo território
+                brasileiro
+            </p>
         </div>
     </div>
     <hr>
+    <h2 style="text-align: center;margin-bottom: 15px;">Inspirações</h2>
     <div class="columns is-full" style="padding:0 20px 0 40px ;">
-        <div class="column is-half">Reserved text</div>
-        <div class="column is-two-fifths">Foto</div>
-        <div class="column">select</div>
+        <div class="column is-half">
+            Selecione uma pessoa
+        </div>
+        <div class="column is-one-fifths">
+            <img src="imagens/imagembase.png" alt="reserved_slot_to_photo">
+        </div>
+        <div class="column is-one-fifths">
+            <select name="pessoa" id="pessoa" onclick="atualizardados()">
+                <option value="none">Selecione Uma pessoa</option>
+            </select>
+        </div>
+        <script>
+            function atualizardados(){
+                if (document.getElementById('pessoa').value !== 'none')
+                {
+                    fetch('links.json').then(response =>
+                     {
+                        return response.json()
+                    }
+                ).then(
+                    dados => {
+                    const key = document.getElementById('pessoa').value;
+                    const pessoa = dados.find(item => item.nome === key);
+                    
+                    }
+                )
+                    
+
+                }
+            }
+
+
+
+            fetch('links.json').then(response => {
+            
+                return response.json()
+            }
+            ).then(dados => {
+                const nomes = dados.map(item => item.nome);
+                const select_nomes = document.getElementById('pessoa')
+                nomes.forEach(nome => {
+                    const option = document.createElement('option')
+                    option.value = nome
+                    option.textContent = nome
+                    select_nomes.appendChild(option)
+                });
+            }).catch(error => {
+                console.error("Erro")
+            })
+
+
+
+        </script>
 
     </div>
     <hr>
     <h1 style="text-align: start;margin-left: 40px;">Ambições</h1>
-    <p style="text-indent: 20px;margin-left: 20px;">Texto para ambicoes / pequeno texto</p>
+    <p style="margin-left: 40px;">Tenho como ambição ser profissionalmente apto em desenvolver projetos individuais, ter
+        todo conhecimento
+        por trás da informação, infraestrutura e segurança envolvida em um desenvolvimento de software do 'zero'
+    </p>
 
 
 
-        <div class="card">
-           
-            <div class="card-content">
+    <div class="card">
 
-              <div class="content" style="text-align: center;">
+        <div class="card-content">
+
+            <div class="content" style="text-align: center;">
                 <blockquote style="color:white">
                     ⁠<i>"O primeiro passo pode não te levar onde você quer chegar, mas pode te tirar de onde você
-                    está"</i>    
+                        está"</i>
                     <strong style="color:white;"><sub style="padding-left: 20px;">João Daniel</sub></strong>
                 </blockquote>
-              </div>
             </div>
-          </div>
+        </div>
+    </div>
 
-          <footer class="footer">
-            <div class="content has-text-centered" style="color:white;">
-              <p>Desenvolvido por 
+    <footer class="footer">
+        <div class="content has-text-centered" style="color:white;">
+            <p>Desenvolvido por
                 <strong>Alexandre</strong>
-               
-              </p>
-              <div style="display: inline-flex;">
-               <p>↓ Acesse minhas redes sociais ↓</p>
+
+            </p>
+            <div style="display: inline-flex;">
+                <p>↓ Acesse minhas redes sociais ↓</p>
             </div>
-            </div>
-              <div class="icons mt-4 d-flex justify-content-center" >
-                <a href="https://br.linkedin.com/in/alexandre-alcindo-0840a0316" target="_blank">
-                    <img class="mx-2" src="imagens/icon-linkedin.png" width="45" height="45" alt="linkedin">
-                </a>
-                <a href="https://www.instagram.com/alexandre.alcindo1/" target="_blank">
-                    <img class="mx-2" src="imagens/icon-instagram.png" width="45" height="45" alt="instagram">
-                </a>
-                <a href="https://github.com/xandoliveira2" target="_blank">
-                    <img class="mx-2" src="imagens/icon-github.png" width="45" height="45" alt="github">
-                </a>
-               
-            </div>
-            
-          </footer>
+        </div>
+        <div class="icons mt-4 d-flex justify-content-center">
+            <a href="https://br.linkedin.com/in/alexandre-alcindo-0840a0316" target="_blank">
+                <img class="mx-2" src="imagens/icon-linkedin.png" width="45" height="45" alt="linkedin">
+            </a>
+            <a href="https://www.instagram.com/alexandre.alcindo1/" target="_blank">
+                <img class="mx-2" src="imagens/icon-instagram.png" width="45" height="45" alt="instagram">
+            </a>
+            <a href="https://github.com/xandoliveira2" target="_blank">
+                <img class="mx-2" src="imagens/icon-github.png" width="45" height="45" alt="github">
+            </a>
+
+        </div>
+
+    </footer>
 
 
 
