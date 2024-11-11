@@ -10,27 +10,34 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
+    <style>
+        html{scroll-behavior: smooth;}
+    </style>
 </head>
 
 <body>
     <div id="menu">
-        <div class="texto">
-            <p>Alexandre</p>
-            <p>Alcindo</p>
+        <div class="texto" style="font-family: 'poppins',sans-serif;font-weight: bolder;">
+            <p style="font-size: 40px;text-shadow: 5px 5px 10px;color:darkgreen;-webkit-text-stroke: 1px black;">Alexandre</p>
+            <p style="font-size: 40px;text-shadow: 5px 5px 10px;color:darkgreen;-webkit-text-stroke: 1px black;">Alcindo</p>
         </div>
-        <div class="foto">
-            <img src="" alt="">
+        <div class="foto" style="width: 120px;height: 120px;background-color: red;border-radius: 50%;overflow: hidden;">
+            <img src="imagens/logo.jpeg" style="width: fit-content;height: fit-content;translate: 0 -20%;" alt="">
         </div>
     </div>
     <div class="tabs">
         <ul class="d-flex justify-content-around">
             <li class="is-active"><a>Sobre</a></li>
-            <li><a>Ambição</a></li>
-            <li><a>Contatos</a></li>
-            <li><a href="curriculum.html" target="_blank"
-                    style="text-decoration: none;color:black;font-weight: 700;">Curriculum</a></li>
+            <li><a onclick="location.href='#CONQUISTAS'">Conquistas</a></li>
+            <li><a onclick="location.href='#CONTATOS'">Contatos</a></li>
+            <li><a style="text-decoration: none;color:black;font-weight: 700;" onclick="exibirPdf()">Curriculum</a></li>
         </ul>
     </div>
+    <script>function exibirPdf()
+    {
+        window.open('Alexandre.pdf','_blank');
+    } 
+    </script>
 
     <h1 style="text-align: center;">Sobre</h1>
     <div class="columns is-full" style="padding:0 20px 0 40px ;">
@@ -50,7 +57,7 @@
         </div>
 
     </div>
-    <h1 style="text-align: center;">Conquistas</h1>
+    <h1 style="text-align: center;" id="CONQUISTAS">Conquistas</h1>
     <div class="columns is-full" style="padding:0 20px 0 40px ;">
         <div class="column is-three-fifths">
             <h3 style="text-align: center;color: rgb(178,0,0);">Interfatecs 2024</h3>
@@ -96,55 +103,86 @@
     <h2 style="text-align: center;margin-bottom: 15px;">Inspirações</h2>
     <div class="columns is-full" style="padding:0 20px 0 40px ;">
         <div class="column is-half">
-            Selecione uma pessoa
+            <p id="bloco_texto">SELECIONE UMA PESSOA!</p>
+        </div>
+        <div class="column is-one-fifths" style="height: 342px;width: 342px;">
+            <img src="data:image/jpeg;base64,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" 
+            id="bloco_foto"alt="reserved_slot_to_photo" style="height: 100%;width: 100%;">
         </div>
         <div class="column is-one-fifths">
-            <img src="imagens/imagembase.png" alt="reserved_slot_to_photo">
-        </div>
-        <div class="column is-one-fifths">
-            <select name="pessoa" id="pessoa" onclick="atualizardados()">
-                <option value="none">Selecione Uma pessoa</option>
+            <select name="pessoa" id="pessoa" onclick="atualizarDados()">
+                <option value="none">Selecione uma pessoa</option>
             </select>
         </div>
         <script>
-            function atualizardados(){
-                if (document.getElementById('pessoa').value !== 'none')
-                {
-                    fetch('links.json').then(response =>
-                     {
-                        return response.json()
-                    }
-                ).then(
-                    dados => {
-                    const key = document.getElementById('pessoa').value;
-                    const pessoa = dados.find(item => item.nome === key);
-                    
-                    }
-                )
-                    
+            const dados = 
+            [
+{
+    "nome":"Rodrigo Polastro",
+    "conteudo":[
+        {"imagem":"https://media.licdn.com/dms/image/v2/D4D03AQHTLruX_X3m-A/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1714694819743?e=1736985600&v=beta&t=wv-aSMklIsKuvDt8w_OQ1IDdEdkCbuvHAUAfTBKpQmM"},
+        {"texto":"Rodrigo Polastro, uma pessoa que eu admiro bastante, uma pessoa cativante, carismatica, humilde e MUITO inteligente, conheci ele através de uma organização de maratona para programação e eu agradeço por ter conhecido ele, uma pessoa incrível com qual aprendi várias coisas além de discussões que geralmente temos que sempre agregam ao meu conhecimento."}
+    ]
+}
+,
+{
+    "nome":"Júnior Gonçalves",
+    "conteudo":[
+        {"imagem":"https://media.licdn.com/dms/image/v2/C4D03AQExDVpKZjlslQ/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1594817945444?e=1736985600&v=beta&t=dvTlBl2-i-MvlIgmmmMXon9Q_alw63IMSyGXJgEqMvo"},
+        {"texto":"Júnior Gonçalves, meu professor na FATEC de Itapira, o professor claramente mais dedicado aos seus alunos que eu conheço, ele sempre busca ajudar seus alunos com suas carreiras profissionais como agendar visitas técnicas, conversas com profissionais, incentivar a trabalhar com áreas profissionais do mercado, um professor também que ensina muito bem, sempre propondo desafios que devem ser concluídos."}
+    ]
+}
+,
+{
+    "nome":"Gabriel Almir",
+    "conteudo":[
+        {"imagem":"https://media.licdn.com/dms/image/v2/D4D03AQHwmR0kS8frXQ/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1730529441753?e=1736985600&v=beta&t=C8N1lTOBnyKrmjHP3f2emIa_JcPirkM43-TAPNsXmmM"},
+        {"texto":"Gabriel Almir, uma pessoa que conheci também graças a maratona de programação, uma pessoa INCRIVELMENTE inteligente e experiente na área da programação, uma inspiração para minha carreira profissional, graças a ele eu já consegui ter várias noções de elementos que geralmente não se abrange em áreas acadêmicas."}
+    ]
 
-                }
+}
+,
+{
+    "nome":"Jonas Duzo",
+    "conteudo":[
+        {"imagem":"https://media.licdn.com/dms/image/v2/D4D03AQEEzeDVM3nabg/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1673559814956?e=1736985600&v=beta&t=tKn1ASE1Ar8_7duB6do9jx3FHsYqszznt1RAIoRd8QY"},
+        {"texto":"Jonas Duzo, conheci ele trabalhando juntos em uma empresa, e uma pessoa incrível, super educado, carismático, é definitivamente uma das amizades que consigo levar pela vida, uma pessoa focada em seus objetivos e sonhos, sempre correndo atrás sem ter medo de arriscar."}
+    ]
+}
+]
+const meu_select = document.getElementById('pessoa');
+dados.forEach(item => {
+    const option = document.createElement('option');
+    option.value = item.nome;
+    option.textContent = item.nome;
+    meu_select.appendChild(option);
+})
+
+
+
+function atualizarDados(){
+    const bloco_texto = document.getElementById('bloco_texto');
+    const bloco_foto = document.getElementById('bloco_foto');
+    const select_pessoa = document.getElementById('pessoa').value
+    if (select_pessoa === 'none') {
+        bloco_texto.textContent = "SELECIONE UMA PESSOA!";
+        bloco_foto.src='data:image/jpeg;base64,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'
+                return;
             }
 
+            // Encontrar a pessoa selecionada
+            const pessoa = dados.find(item => item.nome === select_pessoa);
 
+            if (pessoa) {
+                const link_imagem = pessoa.conteudo.find(p => p.imagem)?.imagem;
+                const link_texto = pessoa.conteudo.find(p => p.texto)?.texto;
 
-            fetch('links.json').then(response => {
-            
-                return response.json()
+                // Atualizar o texto e a imagem
+                bloco_texto.textContent = link_texto || 'Texto não encontrado';
+                bloco_foto.src = link_imagem || '';
+                bloco_foto.style.display = link_imagem ? 'block' : 'none';
             }
-            ).then(dados => {
-                const nomes = dados.map(item => item.nome);
-                const select_nomes = document.getElementById('pessoa')
-                nomes.forEach(nome => {
-                    const option = document.createElement('option')
-                    option.value = nome
-                    option.textContent = nome
-                    select_nomes.appendChild(option)
-                });
-            }).catch(error => {
-                console.error("Erro")
-            })
-
+        }
 
 
         </script>
@@ -183,7 +221,7 @@
                 <p>↓ Acesse minhas redes sociais ↓</p>
             </div>
         </div>
-        <div class="icons mt-4 d-flex justify-content-center">
+        <div class="icons mt-4 d-flex justify-content-center" id="CONTATOS">
             <a href="https://br.linkedin.com/in/alexandre-alcindo-0840a0316" target="_blank">
                 <img class="mx-2" src="imagens/icon-linkedin.png" width="45" height="45" alt="linkedin">
             </a>
